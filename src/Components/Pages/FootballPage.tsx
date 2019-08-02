@@ -12,9 +12,9 @@ export default class FootballPage extends Component<Props, State> {
 
     render() {
         return (
-            <Col md={12}>
+            <div>
                 <GamesTable></GamesTable>
-            </Col>
+            </div>
         )
     }
 }

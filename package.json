@@ -2,6 +2,7 @@
   "name": "livescore",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fukuli053.github.io/livescore-react",
   "dependencies": {
     "@types/jest": "24.0.15",
     "@types/node": "12.6.8",
@@ -9,6 +10,7 @@
     "@types/react-dom": "16.8.5",
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-day-picker": "^7.3.0",
     "react-dom": "^16.8.6",
@@ -22,7 +24,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

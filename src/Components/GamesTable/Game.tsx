@@ -72,22 +72,25 @@ export default class Game extends Component<Props, State> {
         }
 
         return (
-                <div className="row event" style={rowStyle}  onMouseOver={this.toggleHover} onMouseOut={this.toggleHover}>
-                    <div className="col-md-12">
-                        <div className="row" onClick={this.toggle}>
-                            <Col xs={1} md={1} className={"status live"}>
+                <div className="event" style={rowStyle}  onMouseOver={this.toggleHover} onMouseOut={this.toggleHover}>
+                    <div className="col-md-12 ">
+                        <div className="row " onClick={this.toggle}>
+                            <Col md={1} className={"d-sm-none d-none d-md-block status live "}>
                                 {this.changeStatus(this.props.match.status)}
                             </Col>
 
-                            <Col xs={1} md={1} className={"status"}>
+                            <Col md={1} className={"status d-sm-none d-none d-md-block"}>
                                 470 
                             </Col>
 
-                            <Col xs={3} md={3} className={"home-team"}>
+                            <Col xs={4} md={3} className={"home-team"}>
                                 {this.props.match.home_name}
                             </Col>
 
-                            <Col xs={3} md={1} className={"text-center"}>
+                            <Col xs={4} md={3} className={"text-center"}>
+                                <div className="d-none d-block d-sm-block d-md-none">
+                                    {this.changeStatus(this.props.match.status)}
+                                </div>
                                 <span className={"score"}>{this.props.match.score}</span>
                             </Col>
 
@@ -95,7 +98,7 @@ export default class Game extends Component<Props, State> {
                                 {this.props.match.away_name}
                             </Col>
 
-                            <Col xs={0} md={2} className={"half-score"}>
+                            <Col md={1} className={"half-score d-sm-none d-none d-md-block"}>
                                 {this.props.match.ht_score}
                             </Col>
 

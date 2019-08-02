@@ -39,19 +39,22 @@ class App extends Component<Props,State> {
       <div className="App">
         <Header/>
         <div className="container ">
-          <Tabs defaultTab="basic-tab-one" className={"live-score-table"}>
-            <TabList className={"live-score-band"}>
-              <Tab tabFor="basic-tab-one"><FaFutbol/> Futbol</Tab>
-              <Tab tabFor="basic-tab-two"><FaBasketballBall/> Basketbol</Tab>
-              <button className={"rwt__tab"} style={{float: "right"}} onClick={this.onClickLive}> <span><FaRegClock/> Canlı </span></button>
-            </TabList>
-            <TabPanel tabId="basic-tab-one" className={"content"}>
-              <FootballPage/>
-            </TabPanel>
-            <TabPanel tabId="basic-tab-two">
-              <p>Tab 2 content</p>
-            </TabPanel>
-          </Tabs>
+          <div className="row">
+            <div className="col-md-12">
+              <Tabs defaultTab="basic-tab-one" className={"live-score-table"}>
+              <TabList className={"live-score-band"}>
+                <Tab tabFor="basic-tab-one"><FaFutbol/> Futbol</Tab>
+                <Tab tabFor="basic-tab-two"><FaBasketballBall/> Basketbol</Tab>
+                <button className={"rwt__tab d-sm-none d-none d-md-block"} style={{float: "right"}} onClick={this.onClickLive}> <span><FaRegClock/> Canlı </span></button>
+              </TabList>
+              <TabPanel tabId="basic-tab-one" className={"content"}>
+                <FootballPage/>
+              </TabPanel>
+              <TabPanel tabId="basic-tab-two">
+              </TabPanel>
+            </Tabs>
+            </div>
+          </div>
         </div>
       </div>
     );

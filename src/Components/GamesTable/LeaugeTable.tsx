@@ -18,7 +18,7 @@ export default class LeagueTable extends Component<Props, State> {
     render() {
         const {league_id, competition_name, scheduled} = this.props.leauge[0];
         return (
-            <div className="row" id={league_id}>
+            <div id={league_id}>
                 <div className={"league-header"}>
                     <FlagIcon code="GB" size={18} />
                     <span className={"league-name"}>{competition_name} </span>
