@@ -1,0 +1,74 @@
+.match-details{
+    float: left;
+    height: 100%;
+    background: #ccc;
+    padding: 5px;
+}
+
+.detail-score {
+    font-size: 30px;
+    color: #BB1818;
+    text-align: center;
+}
+
+.detail-time{
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.detail-date{
+    font-size: 11px;
+    text-align: center;
+}
+
+.detail-league{
+    font-size: 11px;
+    text-align: center;
+}
+
+.scorers{
+    text-align: center;
+}
+
+.detail-stadium{
+    font-size: 11px;
+    text-align: center;
+}
+
+.stat-rows .row {
+    margin: 20px 0;
+}
+
+.team-logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.team-name {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.label {
+    font-weight: bold;
+    text-align: center;
+}
+
+.body{
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.notice-row {
+    display: table;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}

@@ -1,0 +1,17 @@
+.event-detail {
+    background-color: white;
+    margin: 15px 0 0 0;
+}
+
+.tab-menu{
+    background-color: #E2E3E4;
+}
+
+.tab-menu button {
+    padding: 10px 18px;
+}
+
+.tab-panel{
+    width: 100%;
+    background-color: #CCCCCC;
+}

@@ -1,33 +1,49 @@
-.App {
+body{
+  background-color: #ECF0F1;
+}
+
+.GamesTable{
+  padding: 0 5px 0 15px;
+}
+
+.datesecme{
+  float: right;
+}
+
+.event {
+  width: 100%;
+  font-size: 11px;
+  margin: 0;
+  background-color: #ffffff;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: #4E6C76 1px solid;
+}
+
+
+.live-score-band {
+  background-color: #193d44;
+}
+
+.live-score-band button {
+  color: #fff;
+}
+
+.live-score-table{
+  margin-top: 40px;
+}
+
+.live-score-table .no-match-live{
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.content{
+  background: #fff;
+  padding: 10px 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 320px) {
+  .container{
+      max-width: 100%;
   }
 }

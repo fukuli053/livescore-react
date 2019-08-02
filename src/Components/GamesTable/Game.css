@@ -1,0 +1,32 @@
+.status{
+    text-align: center;
+  }
+
+.live{
+    color: #BB1818;
+    font-weight: 700;
+}
+
+.home-team{
+    text-align: right;
+}
+
+.away-team{
+    text-align: left;
+}
+
+.score {
+    color: white;
+    text-align: center;
+    background-color: #16b09d;
+    vertical-align: middle;
+    border-radius: 5px;
+    padding: 3px 10px;
+    position: relative;
+}
+
+.half-score{
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
